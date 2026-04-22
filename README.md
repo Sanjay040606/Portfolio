@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sanjay Portfolio
 
 This is a portfolio website for Sanjay S built with `Next.js`, `Tailwind CSS`, and `GSAP`.
@@ -58,3 +59,7 @@ npm.cmd run start
 - The contact form currently uses `mailto:` instead of a backend form service.
 - If you want, this can be upgraded later with `Resend`, `EmailJS`, or `Formspree`.
 - The current design is a close custom rebuild inspired by the reference portfolio structure, not a direct copy of its original assets or proprietary effects.
+=======
+# Portfolio
+Portfolio website built with Next.js to showcase my projects, skills, education, and contact details in a clean, responsive, and modern design.
+>>>>>>> eb7021a1b33c9fc5017191522b516eec2337951b

@@ -24,7 +24,7 @@ export const projects = [
     type: "Website Recreation",
     caption: "Built to mirror the original experience with a cleaner flow.",
     description:
-      "A responsive recreation of the Plant Green Internship website, focused on matching the original structure, improving visual consistency, and practicing careful layout implementation across key sections.",
+      "A responsive recreation of the Plant Green Inertia website, built to match the original structure while improving spacing, visual consistency, and overall clarity across the main sections.",
     stack: ["HTML", "CSS", "JavaScript"],
     live: "https://sanjay040606.github.io/PGI_Website_Recreate/",
     github: "https://github.com/Sanjay040606/PGI_Website_Recreate",
