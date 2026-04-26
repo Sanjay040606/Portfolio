@@ -101,6 +101,67 @@ button {
   }
 }
 
+@keyframes rainFall {
+  0% {
+    top: -3rem;
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  100% {
+    top: calc(100% + 2rem);
+    opacity: 0;
+  }
+}
+
+@keyframes rainGlow {
+  0%,
+  100% {
+    opacity: 0.24;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes tapRipple {
+  0% {
+    transform: translate(-50%, -50%) scale(0.35);
+    opacity: 0.7;
+  }
+
+  70% {
+    opacity: 0.24;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.8);
+    opacity: 0;
+  }
+}
+
+@keyframes rainBurstDrop {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0) rotate(var(--rain-rotation, 0deg)) scaleY(0.85);
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(calc(-50% + var(--rain-drift, 0px)), calc(-50% + var(--rain-distance, 120px)), 0) rotate(var(--rain-rotation, 0deg)) scaleY(1);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .float-slow {
     animation: float 7s ease-in-out infinite;
@@ -119,6 +180,49 @@ button {
   .interactive-panel-mobile {
     animation: panelFloat 10s ease-in-out infinite;
   }
+}
+
+.ambient-rain-drop {
+  animation-name: rainFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.ambient-rain-burst {
+  animation: rainBurstDrop var(--rain-duration, 1600ms) linear forwards;
+}
+
+.ambient-rain-settled {
+  filter: blur(0.15px);
+  box-shadow: 0 0 10px rgba(103, 232, 249, 0.32);
+}
+
+.ambient-rain-glow {
+  animation: rainGlow 6s ease-in-out infinite;
+}
+
+.interactive-panel[data-paused="true"] .ambient-rain-drop,
+.interactive-panel-mobile[data-paused="true"] .ambient-rain-drop,
+.interactive-panel[data-paused="true"] .ambient-rain-glow,
+.interactive-panel-mobile[data-paused="true"] .ambient-rain-glow,
+.interactive-panel[data-paused="true"] .ambient-rain-burst,
+.interactive-panel-mobile[data-paused="true"] .ambient-rain-burst {
+  animation-play-state: paused;
+}
+
+.interactive-panel[data-tap-active="true"] .ambient-rain-pulse,
+.interactive-panel-mobile[data-tap-active="true"] .ambient-rain-pulse {
+  animation: tapRipple 720ms ease-out;
+}
+
+.interactive-panel[data-tap-active="true"] .ambient-rain-focus,
+.interactive-panel-mobile[data-tap-active="true"] .ambient-rain-focus {
+  opacity: 0.75;
+}
+
+.interactive-panel[data-tap-active="true"] .ambient-rain-drop,
+.interactive-panel-mobile[data-tap-active="true"] .ambient-rain-drop {
+  filter: brightness(1.15) saturate(1.15);
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 180) rotate(90) scale(256)">
+      <stop offset="0" stop-color="#0d1a31"/>
+      <stop offset="1" stop-color="#050b16"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="96" y1="96" x2="416" y2="416" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8be9ff"/>
+      <stop offset="0.45" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="248" fill="url(#bg)" stroke="rgba(255,255,255,0.08)" stroke-width="4"/>
+  <circle cx="256" cy="256" r="214" stroke="url(#ring)" stroke-width="8" opacity="0.9"/>
+  <circle cx="256" cy="256" r="180" stroke="rgba(255,255,255,0.16)" stroke-width="2" stroke-dasharray="6 12"/>
+  <circle cx="256" cy="256" r="146" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <g opacity="0.9" stroke-linecap="round" stroke-width="6">
+    <path d="M118 268c18-74 68-128 130-142" stroke="#67e8f9"/>
+    <path d="M394 268c-18-74-68-128-130-142" stroke="#67e8f9"/>
+    <path d="M128 290c16 64 62 112 124 132" stroke="#22c55e"/>
+    <path d="M384 290c-16 64-62 112-124 132" stroke="#22c55e"/>
+  </g>
+  <text x="256" y="172" text-anchor="middle" fill="#eef6ff" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="5">UNIVERSITY</text>
+  <text x="256" y="212" text-anchor="middle" fill="#eef6ff" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="4">OF MADRAS</text>
+  <text x="256" y="305" text-anchor="middle" fill="#67e8f9" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700">UoM</text>
+  <text x="256" y="350" text-anchor="middle" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="8">ESTD 1857</text>
+  <circle cx="256" cy="256" r="94" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  <circle cx="256" cy="256" r="68" fill="rgba(103,232,249,0.04)" stroke="rgba(103,232,249,0.22)" stroke-width="2"/>
+  <circle cx="256" cy="256" r="8" fill="#67e8f9"/>
+</svg>
