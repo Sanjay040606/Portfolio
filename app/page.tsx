@@ -33,7 +33,7 @@ export default function HomePage() {
           })}
         </div>
 
-        <InteractivePanel className="glass-panel space-y-4 rounded-[2rem] border border-white/12 bg-white/[0.055] p-6 transition-transform duration-150 ease-out">
+        <InteractivePanel className="glass-panel space-y-4 rounded-[2rem] border border-white/12 bg-white/[0.055] p-6 transition-transform duration-150 ease-out max-[350px]:mx-auto max-[350px]:w-[calc(100vw-2.5rem)]">
           <div className="flex items-start justify-between gap-4">
             <div className="space-y-4">
               <p className="js-page-enter section-label">{hero.eyebrow}</p>
@@ -83,7 +83,7 @@ export default function HomePage() {
         <div className="absolute -left-4 top-10 h-20 w-20 rounded-full bg-cyan-400/15 blur-3xl motion-safe:animate-pulse" />
         <div className="absolute right-0 top-0 h-24 w-24 rounded-full bg-emerald-400/12 blur-3xl motion-safe:animate-pulse" />
 
-        <InteractivePanel className="js-home-hero glass-panel relative min-h-[420px] overflow-hidden rounded-[2rem] border border-white/10 p-6 transition-transform duration-150 ease-out">
+        <InteractivePanel className="js-home-hero glass-panel relative min-h-[420px] overflow-hidden rounded-[2rem] border border-white/10 p-6 transition-transform duration-150 ease-out max-[350px]:mx-auto max-[350px]:w-[calc(100vw-2.5rem)]">
           <div className="absolute inset-x-8 top-8 h-56 rounded-full bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.2),transparent_68%)] blur-2xl motion-safe:animate-[float_8s_ease-in-out_infinite]" />
           <div className="absolute left-8 bottom-8 h-24 w-24 rounded-full bg-white/8 blur-xl motion-safe:animate-[float_10s_ease-in-out_infinite]" />
 

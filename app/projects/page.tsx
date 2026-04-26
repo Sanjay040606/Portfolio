@@ -14,7 +14,7 @@ export default function ProjectsPage() {
       <section className="relative overflow-hidden py-10 md:py-14">
         <div className="mb-10 grid gap-6 md:grid-cols-[0.95fr_1.05fr] md:items-stretch">
           <ScrollReveal>
-            <InteractivePanel className="glass-panel mx-auto w-full max-w-5xl min-h-[220px] rounded-[2rem] border border-white/12 bg-white/[0.055] p-6 transition-transform duration-150 ease-out md:min-h-[320px] md:p-7">
+            <InteractivePanel className="glass-panel mx-auto w-full max-w-5xl min-h-[220px] rounded-[2rem] border border-white/12 bg-white/[0.055] p-6 transition-transform duration-150 ease-out md:min-h-[320px] md:p-7 max-[350px]:w-auto max-[350px]:max-w-[calc(100vw-2.5rem)]">
               <div className="space-y-3">
                 <p className="js-page-enter section-label">Projects</p>
                 <h1 className="js-page-enter max-w-[12ch] font-heading text-5xl leading-[0.95] sm:text-6xl">
