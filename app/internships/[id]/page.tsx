@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { internshipDetails } from "@/lib/content";
 import ScrollReveal from "@/components/scroll-reveal";
@@ -207,15 +206,15 @@ export default async function InternshipDetailPage({
                     </div>
                   </div>
                   <div className="relative aspect-[16/10] w-full">
-                    <div className="absolute inset-0 md:hidden">
-                      <Image
-                        src={internship.project.previewImage || "/pgi-website-preview.svg"}
-                        alt={`${internship.project.title} preview`}
-                        fill
-                        sizes="100vw"
-                        className="object-cover object-top"
-                      />
-                    </div>
+                    <video
+                      className="absolute inset-0 h-full w-full object-cover object-top md:hidden"
+                      src={internship.project.previewVideo}
+                      muted
+                      loop
+                      playsInline
+                      autoPlay
+                      preload="metadata"
+                    />
                     <iframe
                       src={internship.project.live}
                       title={`${internship.project.title} live preview`}
@@ -228,7 +227,7 @@ export default async function InternshipDetailPage({
                 </div>
 
                 <p className="px-2 text-sm leading-7 text-white/45">
-                  Mobile shows a static preview with a fixed frame. On desktop, if the live frame stays blank, the deployed site is probably blocking embeds, so use the new-tab view instead.
+                  Mobile shows the demo video with a fixed frame. On desktop, if the live frame stays blank, the deployed site is probably blocking embeds, so use the new-tab view instead.
                 </p>
               </div>
             </div>

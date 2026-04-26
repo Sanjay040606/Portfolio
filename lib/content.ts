@@ -116,7 +116,7 @@ export const projects = [
     stack: ["HTML5", "CSS3", "JavaScript"],
     live: "https://sanjay040606.github.io/PGI_Website_Recreate/",
     github: "https://github.com/Sanjay040606/PGI_Website_Recreate",
-    previewImage: "/pgi-website-preview.svg",
+    previewVideo: "/PGI_demo.mp4",
   },
   {
     title: "SageCart",
@@ -127,7 +127,7 @@ export const projects = [
     stack: ["Next.js", "React", "Tailwind CSS", "MongoDB", "Clerk", "Mongoose"],
     live: "https://sage-cart-e-commerce.vercel.app/",
     github: "https://github.com/Sanjay040606",
-    previewImage: "/sagecart-preview.svg",
+    previewVideo: "/sagecart_demo.mp4",
   },
 ];
 
@@ -166,7 +166,7 @@ export const internshipDetails = [
         "This project was centered on content organization and company presentation rather than application logic.",
         "It taught me how to turn a business website into a polished portfolio piece without losing clarity.",
       ],
-      previewImage: "/pgi-website-preview.svg",
+      previewVideo: "/PGI_demo.mp4",
       live: "https://sanjay040606.github.io/PGI_Website_Recreate/",
       github: "https://github.com/Sanjay040606/PGI_Website_Recreate",
     },
@@ -195,7 +195,7 @@ export const internshipDetails = [
         "This project focused on full-stack application structure instead of a simple website recreation.",
         "It sharpened my understanding of routing, state, authentication, and database-backed UI flow.",
       ],
-      previewImage: "/sagecart-preview.svg",
+      previewVideo: "/sagecart_demo.mp4",
       live: "https://sage-cart-e-commerce.vercel.app/",
       github: "https://github.com/Sanjay040606",
     },
